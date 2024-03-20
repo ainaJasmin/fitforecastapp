@@ -1,15 +1,36 @@
+// import React from 'react';
+// import MainPageSunny from './MainPageSunny';
+// import Clothes from './Clothes'; // Import the Forum component
+
+// function App() {
+//     return (
+//         <div>
+//             <WelcomePage />
+//             <MainPageSunny /> {/* Render the MainPageSunny component */}
+//         </div>
+//     );
+// }
+
+// export default App;
 import React from 'react';
 import MainPageSunny from './MainPageSunny';
-import Clothes from './Clothes'; // Import the Forum component
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ClothesPage from './Clothes';
+import WelcomePage from './WelcomePage';
 
 function App() {
     return (
-        <div>
-            <WelcomePage />
-            <MainPageSunny /> {/* Render the MainPageSunny component */}
-        </div>
+        <Router>
+            <Routes>
+                <Route path='/' element ={<WelcomePage />} />
+                <Route path='welcome' element ={<WelcomePage />} />
+                <Route path="main" element={<MainPageSunny />} />
+                <Route path="clothes" element={<ClothesPage />} />
+            </Routes>
+        </Router>
     );
 }
 
 export default App;
+
 
