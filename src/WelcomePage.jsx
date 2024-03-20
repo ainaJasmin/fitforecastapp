@@ -52,9 +52,9 @@ import searchImg from "./search logo.png"
 
 function WelcomePage() {
 
-    function clickSearch() {
+    function clickSearch(city) {
         const apiKey = '6ba3ee5ac50af61f21d2136ac5dab42c';
-        const geocodingApiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${CityInput.value}&limit=1&appid=${apiKey}`;
+        const geocodingApiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
     
         let latitude, longitude;
 
@@ -63,7 +63,7 @@ function WelcomePage() {
             .then(data=> {
                 if (data.length>0) {
                     latitude = data[0].lat;
-                    longtitude = data[0].lon;
+                    longitude = data[0].lon;
                     
 
 
