@@ -38,6 +38,10 @@ searchButton.addEventListener("click", findCity);
 
 const APIKEY = "2d99492a4fa8e51c171ab69856dd06ef";
 
+function numToDay(num) {
+
+}
+
 async function updateWeather(lat,lon) {
     //clear existing data, make space for new one
     document.getElementById("weatherBoxes").innerHTML = "";
