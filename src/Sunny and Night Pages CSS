@@ -1,0 +1,216 @@
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Ensure image doesn't overflow the container */
+}
+
+.logo {
+    position: absolute;
+    top: 2%; /* Adjust top position as needed */
+    left: 2%; /* Adjust left position as needed */
+    width: 10%; /* Adjust width as needed */
+}
+
+.search-overlay {
+    position: absolute;
+    top: 2%; /* Adjust top position as needed */
+    left: 30%; /* Adjust left position as needed */
+    width: 4%; /* Adjust width as needed */
+    height: auto;
+}
+
+.background-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.searchLogo {
+    position: absolute;
+    left: 93%;
+    top: 1%;
+    width: 6%;
+    height: auto;
+}
+
+.sunny {
+    position: absolute;
+    bottom: 40%;
+    left: 20%; /* Adjust left position as needed */
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.location {
+    position: absolute;
+    bottom: 25%; /* Adjust top position as needed */
+    left: 13%; /* Adjust left position as needed */
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+}
+
+.temperature {
+    position: absolute;
+    bottom: -40%; /* Adjust top position as needed */
+    left: 85%; /* Adjust left position as needed */
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 30%; /* Adjust this value to change the vertical position of the box */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
+    width: 60%; /* Adjust the width as needed */
+    max-height: 50%;
+    max-width: 60%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.overlay2 {
+    position: absolute;
+    top: 30%; /* Adjust this value to change the vertical position of the box */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
+    width: 70%; /* Adjust the width as needed */
+    max-height: 70%;
+    max-width: 70%;
+    height: 20%;
+    padding:2%;
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+
+.overlay3 {
+    position: absolute;
+    top: 30%; /* Adjust this value to change the vertical position of the box */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
+    width: 70%; /* Adjust the width as needed */
+    max-height: 70%;
+    max-width: 70%;
+    height: 20%;
+    padding:2%;
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+
+.greybox {
+    position: absolute;
+    width: 13%; /* Adjust width as needed */
+    height: auto;
+    right:35%; /* Adjust right position as needed */
+    bottom: 20%; /* Adjust bottom position as needed */
+}
+
+.greybox2 {
+    position: absolute;
+    width: 13%; /* Adjust width as needed */
+    height: auto;
+    right: 55%; /* Adjust right position as needed */
+    bottom: 20%; /* Adjust bottom position as needed */
+}
+
+.greybox3 {
+    position: absolute;
+    width: 13%; /* Adjust width as needed */
+    height: auto;
+    right: 75%; /* Adjust right position as needed */
+    bottom: 20%; /* Adjust bottom position as needed */
+}
+
+.greybox4 {
+    position: absolute;
+    width: 13%; /* Adjust width as needed */
+    height: auto;
+    right: 15%; /* Adjust right position as needed */
+    bottom: 20%;
+
+}
+
+.text-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 6vw; /* Adjust font size as needed */
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.location {
+    font-size: 2vw; /* Adjust font size as needed */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.temperature {
+    font-size: 5vw; /* Adjust font size as needed */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        top: 2%;
+        left: 2%;
+        width: 20%;
+    }
+
+    .overlay {
+        top: 20%;
+        width: 90%;
+        max-width: 90%;
+        padding: 3%;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+
+    .overlay2, .overlay3, .overlay4, .overlay5 {
+        width: 90%;
+        max-width: 90%;
+        padding: 2%;
+        font-size: 3vw;
+    }
+
+    .sunny {
+        font-size: 4vw;
+    }
+
+    .date {
+        font-size: 3vw;
+    }
+
+    .location {
+        font-size: 2.5vw;
+    }
+
+    .Image {
+        height: auto;
+    }
+
+    .rain, .snow, .wind, .sun {
+        width: 30%;
+    }
+
+    .header {
+        font-size: 3vw;
+    }
+
+    .Info {
+        font-size: 3vw;
+    }
+}
