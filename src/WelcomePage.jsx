@@ -73,13 +73,8 @@ function WelcomePage() {
             .then(response=>response.json())
             .then(data=> {
                 if (data.length>0) {
-                    console.log(data[0].lat + " " + data[0].lon);
-                    setLat(data[0].lat);
-                    setLon(data[0].lon);
-                    localStorage.setItem("lat", lat);
-                    localStorage.setItem("lon", lon);
-                    console.log(`State: lat=${lat} lon=${lon}`);
-                    console.log(`Local Storage: lat=${localStorage.getItem("lat")} lon=${localStorage.getItem("lon")}`);
+                    localStorage.setItem("lat", data[0].lat);
+                    localStorage.setItem("lon", data[0].lon);
                 } else {
                     console.log("API Response Not As Expected");
                 }
@@ -89,6 +84,7 @@ function WelcomePage() {
 
     function handleClick() {
         searchCity();
+        moveToMain();
     }
 
 
