@@ -75,7 +75,7 @@
 }
 .rain-overlay5 {
     position: absolute;
-    top: 30%; /* Adjust this value to change the vertical position of the box */
+    top:30%; /* Adjust this value to change the vertical position of the box */
     left: 75%;
     transform: translate(-50%, -50%);
     background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
