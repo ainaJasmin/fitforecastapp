@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ClothesPage from './Clothes';
 import WelcomePage from './WelcomePage';
 import HydrationPage from './HydrationPage';
+import RainPage  from './RainPage';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="main" element={<MainPageSunny />} />
                 <Route path="clothes" element={<ClothesPage />} />
                 <Route path="hydration" element={<HydrationPage />} />
+                <Route path="rain" element={<RainPage />} />
             </Routes>
         </Router>
     );

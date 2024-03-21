@@ -180,8 +180,20 @@ function MainPageSunny() {
                     <p className="temperature"></p>
                 </div>
             </div>
+{/* Facts Box */}
+<div className="facts-box">
+                <h2>Fitness Facts</h2>
+                <ul>
+                    <li>Regular exercise improves mood and reduces the risk of depression.</li>
+                    <li>A balanced diet rich in fruits and vegetables boosts overall health.</li>
+                    <li>Strength training helps maintain muscle mass and bone density.</li>
+                    <li>Adequate hydration is essential for optimal performance during workouts.</li>
+                    <li>Quality sleep is crucial for muscle recovery and overall well-being.</li>
+                </ul>
+            </div>
         </div>
     );
 }
+
 
 export default MainPageSunny;
