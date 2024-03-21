@@ -1,0 +1,112 @@
+.Welcome-Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+.fit-logo {
+    position: absolute;
+
+    top: 2%; /* Adjust top position as needed */
+    left: 2%; /* Adjust left position as needed */
+    width: 10%; /* Adjust width as needed */
+}
+.greybox {
+    position: absolute;
+    width: 13%; /* Adjust width as needed */
+    height: auto;
+    right:35%; /* Adjust right position as needed */
+    bottom: 20%; /* Adjust bottom position as needed */
+}
+.rain-overlay1 {
+    position: absolute;
+    top: 10%; /* Adjust this value to change the vertical position of the box */
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
+    width: 6%; /* Adjust the width as needed */
+    height: 8%;
+    max-width: 20%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.rain-overlay2 {
+    position: absolute;
+    top: 60%; /* Adjust this value to change the vertical position of the box */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
+    width: 6%; /* Adjust the width as needed */
+    height: 8%;
+    max-width: 20%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.rain-overlay3 {
+    position: absolute;
+    top: 30%; /* Adjust this value to change the vertical position of the box */
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
+    width: 6%; /* Adjust the width as needed */
+    height: 8%;
+    max-width: 20%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.rain-overlay4 {
+    position: absolute;
+    top: 30%; /* Adjust this value to change the vertical position of the box */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
+    width: 6%; /* Adjust the width as needed */
+    height: 8%;
+    max-width: 20%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.rain-overlay5 {
+    position: absolute;
+    top:30%; /* Adjust this value to change the vertical position of the box */
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
+    width: 6%; /* Adjust the width as needed */
+    height: 8%;
+    max-width: 20%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.rain-overlay6 {
+    position: absolute;
+    top: 30%; /* Adjust this value to change the vertical position of the box */
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(217, 217, 217, 0.9); /* Adjust the alpha value for desired transparency */
+    width: 6%; /* Adjust the width as needed */
+    height: 6%;
+    max-height: 8%;
+    max-width: 20%;
+    padding: 7%; /* Adjust the padding as needed */
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+.humid{
+    position: relative;
+    width: 90%;
+    top: 75%;
+    left: 0%;
+}
+.rain-wind{
+    position: relative;
+    width: 120%;
+    top: 85%;
+    left: -15%;
+}
