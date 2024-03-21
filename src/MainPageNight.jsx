@@ -87,72 +87,65 @@
 import React, { useState, useEffect } from 'react';
 //import './MainPageSunny.css';
 import './sunnyandnight.css'
-import MainPageSunny from './MainPageSunny'; // Import MainPageNight component
-import eiffeltowerImg from './eiffeltower.jpg'; // Import eiffeltower image
-//import towerbridgeImg from './towerbridge.jpg'; // Import tower bridge image
+import MainPageNight from './MainPageNight'; // Import MainPageNight component
+import petronas from './petronas.jpeg'; // Import eiffeltower image
 import fitforecastLogoImg from './fitforecast logo.png'; // Import fitforecast logo image
-import searchLogoImg from './search logo.png'; // Import search logo image
+import searchLogoImg from './search2.png';
 import rainImg from './rain.png'; // Import rain image
-import tshirtlogoImg from './tshirtlogo.png'; // Import tshirtlogo image
+import tshirtlogoImg from './tshirt.png'; // Import tshirtlogo image
 import pfplogoImg from './pfplogo.png'; // Import pfplogo image
 import glasswaterImg from './glasswater.png'; // Import glasswater image
 import greyBoxesImg from './grey boxes2.png'; // Import grey boxes image
+import glass2Img from './glass2.png'
+import bigbenImg from './bigbennight.jpg';
+import macauImg from './macau.jpg';
+import notredamImg from './notredam.jpg'
+import goldengateImg from './goldengate.jpg';
+import eiffelImg from './eiffeltower2.jpg'
+import lisbonImg from './lisbon.jpg';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import WelcomePage from "./WelcomePage";
 import { useNavigate } from 'react-router-dom';
-
-function MainPageNight() {
-    const navigate = useNavigate()
-    const [isNightTime, setIsNightTime] = useState(true);
-    let forecasts = Array(Number(localStorage.getItem("numForecasts")));
-    for (let i = 0; i < forecasts.length; i++) {
-        forecasts[i] = localStorage.getItem(`forecast${i}`).split(" ");
-    }
-
-    //INFO FOR FORECASTS ARRAY//
-    // forecasts[i] = an array which contains the following values: 
-
-    // forecasts[i][0] == HOUR OF FORECAST e.g. 3 (3am) or 16 (4pm)
-    // forecasts[i][1] == ACTUAL TEMP AT ABOVE TIME e.g. 10.5
-    // forecasts[i][2] == FEELS-LIKE TEMP AT ABOVE TIME e.g. 7.3
-    // forecasts[i][3] == DESC OF WEATHER e.g. Clouds or Rain
-    // forecasts[i][4] == WIND SPEED
-
+import romeImg from "./rome.jpg";
+import hạlongbayImg from "./halongbay.jpg";
+import mountrushmoreImg from "./mountrushmore.jpg";
+import londoneyeImg from "./londoneye.jpg";
+import greatwallImg from "./wallofchina.jpeg";
+import tajmahalimg from "./tajmahal.jpg";
+const backgroundImages = [macauImg, petronas, notredamImg, bigbenImg, eiffelImg, lisbonImg,goldengateImg];
+function MainPageSunny() {
+    const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
+    const [isDayTime, setIsDayTime] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
-        const determineTimeOfDay = () => {
-            const currentHour = new Date().getHours();
-            setIsNightTime(currentHour >= 0 && currentHour < 6 || currentHour > 18); // Night time: 0-5  and 19-23
-        };
-
-        determineTimeOfDay(); // Determine time of day when component mounts
-
-        const interval = setInterval(determineTimeOfDay, 60000); // Check every minute for time updates
+        const interval = setInterval(() => {
+            setCurrentBackgroundIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
+        }, 20000); // Change image every 20 seconds
 
         return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, [isNightTime]); // Empty dependency array ensures useEffect runs only once
+    }, []); // Empty dependency array ensures useEffect runs only once
 
-    if (!isNightTime) {
-        return <MainPageSunny />;
+    if (!isDayTime) {
+        return <MainPageNight />;
     }
 
-    // Daytime content rendering
     return (
-        <div className="background">
-            
-            {/* Render night time content */}
-            <img src={eiffeltowerImg} alt="Logo" className="background-image" />
+        <div className="background" style={{
+            backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`,
+            transition: 'background-image 1s ease-in-out' // Add transition for background image
+        }}>
             <a href="/">
-                <img src={fitforecastLogoImg} alt="Logo" className="logo" />
+                <img src={fitforecastLogoImg} alt="Logo" className="fit-logo" />
             </a>
             <div className="overlay" style={{ top: '20%' }}>
                 <img src={searchLogoImg} alt="Logo" className="searchLogo" />
                 <div className="text-container">
                     <div className="sunny text-box">
-                        <h1>{forecasts[0][3]}</h1>
+                        <h1>Sunny</h1>
                     </div>
                     <div className="location text-box">
-                        <p className="location">{localStorage.getItem("name")}</p>
+                        <p className="location">Mile End</p>
                     </div>
                 </div>
             </div>
@@ -181,7 +174,7 @@ function MainPageNight() {
 
                     <a href="">
                         <img src={greyBoxesImg} alt="Logo" className="greybox4"/>
-                        <img src={glasswaterImg} alt="Logo" className="greybox4"/>
+                        <img src={glass2Img} alt="Logo" className="greybox4"/>
                     </a>
                     <p className="location"></p>
                     <p className="temperature"></p>
@@ -191,4 +184,4 @@ function MainPageNight() {
     );
 }
 
-export default MainPageNight;
+export default MainPageSunny;

@@ -1,11 +1,16 @@
-.Background {
-    position: relative;
+.Welcome-Background {
+    position: 100%;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.BlueBar {
+.Welcome-BlueBar {
     position: absolute;
     left: 10%;
     width: 80%; /* Adjust the width as needed */
@@ -17,33 +22,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.FitForecast {
+.Title{
     position: absolute;
-    left: 39%;
-    top: 30%;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 2vw;
+    left: 13%;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 100%; /* Set a maximum width if desired */
+    height: auto;
+    top: 25%;
+    font-size: 3.2vw;
     font-style: italic;
-    white-space: nowrap;
+    max-height: 30%;
+    border-radius: 15px; /* Adjust the radius value as needed */
+    font-family: 'Montserrat', sans-serif;
 }
 
-.Slogan {
+.Welcome-Slogan {
     position: absolute;
-    left: 17%;
-    top: 57%;
+    left: 46%;
+    top: 45%;
     font-family: 'Montserrat', sans-serif;
     color: lightgrey;
-    font-size: 0.8vw;
+    font-size: 1.5vw;
     font-style: italic;
     white-space: nowrap;
 }
 
-.FitLogo {
+.Welcome-FitLogo {
     position: absolute;
-    top: -16%; /* Adjust top position as needed */
-    left: -142.2%; /* Adjust left position as needed */
-    width: 87%; /* Adjust width as needed */
+    top: 26%; /* Adjust top position as needed */
+    left: 7.9%; /* Adjust left position as needed */
+    width: 19%; /* Adjust width as needed */
     height: auto;
 }
 
@@ -55,19 +63,19 @@
     z-index: 2;
 }
 
-.Search {
+.Welcome-Search {
     position: absolute;
-    left: 5%;
-    top: 97%;
+    left: 40%;
+    top: 50%;
     font-family: 'Montserrat', sans-serif;
-    width: 17%;
+    width: 3.5%;
     height: auto;
     z-index: 1;
 }
 
 .SearchLocation {
     position: absolute;
-    left: 27%;
+    left: 10%;
     top: 85%;
     font-family: 'Montserrat', sans-serif;
     width: 17%;
@@ -94,56 +102,7 @@
 
 .Bar {
     position: absolute;
-    left: 25%;
-}
-@media screen and (max-width: 768px) {
-    .logo {
-        top: 2%;
-        left: 2%;
-        width: 20%;
-    }
+    left: 46%;
+    top: 52.5%;
 
-    .overlay {
-        top: 20%;
-        width: 90%;
-        max-width: 90%;
-        padding: 3%;
-        border-radius: 5px;
-        font-size: 3vw;
-    }
-
-    .overlay2, .overlay3, .overlay4, .overlay5 {
-        width: 90%;
-        max-width: 90%;
-        padding: 2%;
-        font-size: 3vw;
-    }
-
-    .sunny {
-        font-size: 4vw;
-    }
-
-    .date {
-        font-size: 3vw;
-    }
-
-    .location {
-        font-size: 2.5vw;
-    }
-
-    .Image {
-        height: auto;
-    }
-
-    .rain, .snow, .wind, .sun {
-        width: 30%;
-    }
-
-    .header {
-        font-size: 3vw;
-    }
-
-    .Info {
-        font-size: 3vw;
-    }
 }
