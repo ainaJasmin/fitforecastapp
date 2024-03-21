@@ -153,6 +153,7 @@ import rainImg from './rain.png';
 import snowImg from './snowicon.png';
 import sunImg from './sunicon.png';
 import windImg from './windicon.png';
+import hikingImg from './hiking.jpg'
 
 
 
@@ -174,37 +175,40 @@ function ClothesPage() {
 
     return (
         <div className="BackgroundImage">
-            <img src={jacketsBackground} alt="Background" className="Image"/>
+            <img src={hikingImg} alt="Background" className="Image"/>
             <a href="main" className="logo-link">
-                <img src={fitforecastLogoImg} alt="Logo" className="logo"/>
+                <img src={fitforecastLogoImg} alt="Logo" className="clothes-logo"/>
             </a>
-            <div className="overlay" style={{top: '15%'}}>
-                <div className="text-container">
-                    <div className="sunny">
-                        <h1>Clothing Info</h1>
+            <div className="clothes-overlay" style={{top: '15%'}}>
+                <div className="clothes-text-container">
+                    <div className="clothes-sunny">
+                        Clothing Info
                     </div>
                     <div className="location text-box">
-                        <p className="location">See what FitForecast recommends you wear on your run today!</p>
+                        <p className="clothes-location"></p>
                     </div>
-                    <div className="date">
+                    <div className="clothes-date">
                         <div id="date"></div>
                     </div>
                 </div>
             </div>
-            <div className="overlay2" style={{top: '28%'}}>
+            <div className="clothes-overlay2" style={{top: '28%'}}>
                 <div className="text-container2">
                     <img src={sunImg} alt="wind" className="sun"/>
                     <div className="header">
                         <h1></h1>
                     </div>
-                    <div className="Info">
+                    <div className="clothes-Info">
                         <p>
                             <ul>
-                                <li>Choose a lightweight, breathable, and moisture-wicking shirt</li>
-                                <li>Opt for lightweight and breathable hiking shorts or convertible trousers</li>
-                                <li>Wear lightweight and breathable hiking shoes or trail running shoes with good grip </li>
+                                <li><strong>Choose a lightweight, breathable, and moisture-wicking shirt</strong></li>
+                                <li><strong>Opt for lightweight and breathable hiking shorts or convertible
+                                    trousers</strong></li>
+                                <li><strong>Wear lightweight and breathable hiking shoes or trail running shoes with
+                                    good grip</strong></li>
                             </ul>
                         </p>
+
                     </div>
                     <div className="location text-box">
                         <p className="location2"></p>
@@ -216,20 +220,23 @@ function ClothesPage() {
                 </div>
             </div>
 
-            <div className="overlay3" style={{top: '63%'}}>
+            <div className="clothes-overlay3" style={{top: '63%'}}>
                 <div className="text-container3">
                     <img src={windImg} alt="wind" className="wind"/>
                     <div className="header">
                         <h1></h1>
                     </div>
-                    <div className="Info">
+                    <div className="clothes-Info">
                         <p>
                             <ul>
-                                <li>A wind-resistant or windproof jacket is crucial to block out cold air and maintain  heat</li>
-                                <li>Wear a pair of durable and wind-resistant trousers, such as those made by Columbia or Arc'teryx</li>
-                                <li>Don't forget a windproof hat or beanie to keep your head warm</li>
+                                <li><strong>A wind-resistant or windproof jacket is crucial to block out cold air and
+                                    maintain heat</strong></li>
+                                <li><strong>Wear a pair of durable and wind-resistant trousers, such as those made by
+                                    Columbia or Arc'teryx</strong></li>
+                                <li><strong>Don't forget a windproof hat or beanie to keep your head warm</strong></li>
                             </ul>
                         </p>
+
                     </div>
                     <div className="location text-box">
                         <p className="location3"></p>
@@ -239,44 +246,50 @@ function ClothesPage() {
                     </div>
                 </div>
             </div>
-            <div className="overlay4" style={{top: '28%'}}>
-                <div className="text-container4">
+            <div className="clothes-overlay4" style={{top: '28%'}}>
+            <div className="text-container4">
                     <img src={snowImg} alt="snow" className="snow"/>
                     <div className="header">
                         <h1></h1>
                     </div>
-                    <div className="Info">
-                        <p>
-                            <ul>
-                                <li>A moisture-wicking base layer followed by a warm insulating layer, such as a fleece jacket.</li>
-                                <li>Wear insulated waterproof pants or snow pants to keep your legs warm and dry</li>
-                                <li>Invest in insulated waterproof hiking boots with good traction for walking on snow-covered trails</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div className="location text-box">
-                        <p className="location4"></p>
-                    </div>
-                    <div className="date">
-                        <div id="date4"></div>
-                    </div>
+                <div className="clothes-Info">
+                    <p>
+                        <ul>
+                            <li><strong>A moisture-wicking base layer followed by a warm insulating layer, such as a
+                                fleece jacket.</strong></li>
+                            <li><strong>Wear insulated waterproof pants or snow pants to keep your legs warm and
+                                dry</strong></li>
+                            <li><strong>Invest in insulated waterproof hiking boots with good traction for walking on
+                                snow-covered trails</strong></li>
+                        </ul>
+                    </p>
+
+                </div>
+                <div className="location text-box">
+                    <p className="location4"></p>
+                </div>
+                <div className="date">
+                    <div id="date4"></div>
                 </div>
             </div>
-            <div className="overlay5" style={{top: '63%'}}>
+            </div>
+            <div className="clothes-overlay5" style={{top: '63%'}}>
                 <div className="text-container4">
                     <img src={rainImg} alt="rain" className="rain"/>
                 </div>
-                <div className="header">
-                    <h1></h1>
-                </div>
-                <div className="Info">
+
+                <div className="clothes-Info">
                     <p>
                         <ul>
-                            <li>Wear a waterproof and breathable rain jacket to keep you dry in wet weather</li>
-                            <li>Invest in waterproof rain pants or overpants to keep your lower body dry and comfortable</li>
-                            <li>Wear waterproof hiking boots or shoes with Gore-Tex or similar waterproof membranes to keep your feet dry in rainy conditions.</li>
+                            <li><strong>Wear a waterproof and breathable rain jacket to keep you dry in wet
+                                weather</strong></li>
+                            <li><strong>Invest in waterproof rain pants or overpants to keep your lower body dry and
+                                comfortable</strong></li>
+                            <li><strong>Wear waterproof hiking boots or shoes with Gore-Tex or similar waterproof
+                                membranes to keep your feet dry in rainy conditions.</strong></li>
                         </ul>
                     </p>
+
                 </div>
                 <div className="location text-box">
                     <p className="location5"></p>
