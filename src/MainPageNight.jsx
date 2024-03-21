@@ -160,21 +160,22 @@ function MainPageSunny() {
 
             <div className="overlay3" style={{ top: '80%' }}>
                 <div className="text-container">
-                    <a href="">
-                        <img src={greyBoxesImg} alt="Logo" className="greybox"/>
-                        <img src={rainImg} alt="Logo" className="greybox"/>
+                    <a href="rain">
+                        <img src={greyBoxesImg} alt="Grey Box" className="greybox"/>
+                        <img src={rainImg} alt="Rain" className="greybox"/>
                     </a>
                     <a href="clothes">
-                        <img src={greyBoxesImg} alt="Logo" className="greybox2"/>
-                        <img src={tshirtlogoImg} alt="Logo" className="greybox2"/>
+                        <img src={greyBoxesImg} alt="Grey Box" className="greybox2"/>
+                        <img src={tshirtlogoImg} alt="T-shirt Logo" className="greybox2"/>
+                    </a>
+                    <a href="hydration">
+                    <img src={pfplogoImg} alt="PFP Logo" className="greybox3"/>
+                    <img src={greyBoxesImg} alt="Grey Box" className="greybox3"/>
                     </a>
 
-                    <img src={pfplogoImg} alt="Logo" className="greybox3"/>
-                    <img src={greyBoxesImg} alt="Logo" className="greybox3"/>
-
-                    <a href="">
-                        <img src={greyBoxesImg} alt="Logo" className="greybox4"/>
-                        <img src={glass2Img} alt="Logo" className="greybox4"/>
+                    <a href="hydration">
+                        <img src={greyBoxesImg} alt="Grey Box" className="greybox4"/>
+                        <img src={glasswaterImg} alt="Glass Water" className="greybox4"/>
                     </a>
                     <p className="location"></p>
                     <p className="temperature"></p>
