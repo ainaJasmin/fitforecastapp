@@ -106,6 +106,21 @@ function MainPageSunny() {
     const navigate = useNavigate()
     const [isDayTime, setIsDayTime] = useState(true);
 
+    let forecasts = Array(Number(localStorage.getItem("numForecasts")));
+    for (let i = 0; i < forecasts.length; i++) {
+        forecasts[i] = localStorage.getItem(`forecast${i}`).split(" ");
+    }
+
+    //INFO FOR FORECASTS ARRAY//
+    // forecasts[i] = an array which contains the following values: 
+
+    // forecasts[i][0] == HOUR OF FORECAST e.g. 3 (3am) or 16 (4pm)
+    // forecasts[i][1] == ACTUAL TEMP AT ABOVE TIME e.g. 10.5
+    // forecasts[i][2] == FEELS-LIKE TEMP AT ABOVE TIME e.g. 7.3
+    // forecasts[i][3] == DESC OF WEATHER e.g. Clouds or Rain
+    // forecasts[i][4] == WIND SPEED
+
+
     useEffect(() => {
         const determineTimeOfDay = () => {
             const currentHour = new Date().getHours();
@@ -117,7 +132,7 @@ function MainPageSunny() {
         const interval = setInterval(determineTimeOfDay, 60000); // Check every minute for time updates
 
         return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, []); // Empty dependency array ensures useEffect runs only once
+    }, [isDayTime]); // Empty dependency array ensures useEffect runs only once
 
     if (!isDayTime) {
         return <MainPageNight />;
@@ -136,10 +151,10 @@ function MainPageSunny() {
                 <img src={searchLogoImg} alt="Logo" className="searchLogo" />
                 <div className="text-container">
                     <div className="sunny text-box">
-                        <h1>Sunny</h1>
+                        <h1>{forecasts[0][3]}</h1>
                     </div>
                     <div className="location text-box">
-                        <p className="location">Mile End</p>
+                        <p className="location">{localStorage.getItem("name")}</p>
                     </div>
                 </div>
             </div>

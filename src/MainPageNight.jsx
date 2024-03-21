@@ -87,9 +87,9 @@
 import React, { useState, useEffect } from 'react';
 //import './MainPageSunny.css';
 import './sunnyandnight.css'
-import MainPageNight from './MainPageNight'; // Import MainPageNight component
+import MainPageSunny from './MainPageSunny'; // Import MainPageNight component
 import eiffeltowerImg from './eiffeltower.jpg'; // Import eiffeltower image
-import towerbridgeImg from './towerbridge.jpg'; // Import tower bridge image
+//import towerbridgeImg from './towerbridge.jpg'; // Import tower bridge image
 import fitforecastLogoImg from './fitforecast logo.png'; // Import fitforecast logo image
 import searchLogoImg from './search logo.png'; // Import search logo image
 import rainImg from './rain.png'; // Import rain image
@@ -101,9 +101,23 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import WelcomePage from "./WelcomePage";
 import { useNavigate } from 'react-router-dom';
 
-function MainPageSunny() {
+function MainPageNight() {
     const navigate = useNavigate()
     const [isNightTime, setIsNightTime] = useState(true);
+    let forecasts = Array(Number(localStorage.getItem("numForecasts")));
+    for (let i = 0; i < forecasts.length; i++) {
+        forecasts[i] = localStorage.getItem(`forecast${i}`).split(" ");
+    }
+
+    //INFO FOR FORECASTS ARRAY//
+    // forecasts[i] = an array which contains the following values: 
+
+    // forecasts[i][0] == HOUR OF FORECAST e.g. 3 (3am) or 16 (4pm)
+    // forecasts[i][1] == ACTUAL TEMP AT ABOVE TIME e.g. 10.5
+    // forecasts[i][2] == FEELS-LIKE TEMP AT ABOVE TIME e.g. 7.3
+    // forecasts[i][3] == DESC OF WEATHER e.g. Clouds or Rain
+    // forecasts[i][4] == WIND SPEED
+
 
     useEffect(() => {
         const determineTimeOfDay = () => {
@@ -126,7 +140,7 @@ function MainPageSunny() {
     return (
         <div className="background">
             
-            {/* Render daytime content */}
+            {/* Render night time content */}
             <img src={eiffeltowerImg} alt="Logo" className="background-image" />
             <a href="/">
                 <img src={fitforecastLogoImg} alt="Logo" className="logo" />
@@ -135,10 +149,10 @@ function MainPageSunny() {
                 <img src={searchLogoImg} alt="Logo" className="searchLogo" />
                 <div className="text-container">
                     <div className="sunny text-box">
-                        <h1>Sunny</h1>
+                        <h1>{forecasts[0][3]}</h1>
                     </div>
                     <div className="location text-box">
-                        <p className="location">Mile End</p>
+                        <p className="location">{localStorage.getItem("name")}</p>
                     </div>
                 </div>
             </div>
@@ -177,4 +191,4 @@ function MainPageSunny() {
     );
 }
 
-export default MainPageSunny;
+export default MainPageNight;
