@@ -30,9 +30,9 @@ const backgroundImages = [macauImg, petronas, notredamImg, bigbenImg, eiffelImg,
 
 function MainPageNight() {
 
+    const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
     const [forecasts, setForecasts] = useState(null);
 
-    const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
     useEffect(() => {
         const apiKey = '6ba3ee5ac50af61f21d2136ac5dab42c';
         const weatherApiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&appid=${apiKey}&units=metric`;
