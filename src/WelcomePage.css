@@ -28,7 +28,7 @@ body {
     width: 80%; 
     max-width: 100%; 
     height: auto;
-    top: 25%;
+    top: 30%;
     font-size: 3.2vw;
     font-style: italic;
     max-height: 30%;
@@ -49,8 +49,8 @@ body {
 
 .Welcome-FitLogo {
     position: absolute;
-    top: 26%; 
-    left: 7.9%; 
+    top: 30%; 
+    left: 10%; 
     width: 19%; 
     height: auto;
 }

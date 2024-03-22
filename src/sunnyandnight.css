@@ -10,7 +10,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden; /* Ensure image doesn't overflow the container */
+    overflow: hidden; 
     transition: background-image 1s ease-in-out;
 }
 
@@ -22,22 +22,22 @@ html, body {
 .fit-logo {
     position: absolute;
 
-    top: 2%; /* Adjust top position as needed */
-    left: 2%; /* Adjust left position as needed */
-    width: 10%; /* Adjust width as needed */
+    top: 2%; 
+    left: 2%; 
+    width: 10%; 
 }
 
 .search-overlay {
     position: absolute;
-    top: 2%; /* Adjust top position as needed */
-    left: 30%; /* Adjust left position as needed */
-    width: 4%; /* Adjust width as needed */
+    top: 2%; 
+    left: 30%; 
+    width: 4%; 
     height: auto;
 }
 .transition-element {
     transition-property: opacity;
-    transition-duration: 5s; /* Adjust the duration as needed */
-    transition-timing-function:ease-in-out; /* Change this to any of the options mentioned above */
+    transition-duration: 5s; 
+    transition-timing-function:ease-in-out; 
 }
 
 
@@ -58,15 +58,15 @@ html, body {
 .sunny {
     position: absolute;
     bottom: 40%;
-    left: 20%; /* Adjust left position as needed */
+    left: 20%; 
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
 }
 
 .location {
     position: absolute;
-    bottom: 25%; /* Adjust top position as needed */
-    left: 13%; /* Adjust left position as needed */
+    bottom: 25%; 
+    left: 13%; 
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
     white-space: nowrap;
@@ -74,8 +74,8 @@ html, body {
 
 .temperature {
     position: absolute;
-    bottom: -40%; /* Adjust top position as needed */
-    left: 85%; /* Adjust left position as needed */
+    bottom: -40%; 
+    left: 85%; 
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
 }
@@ -83,58 +83,57 @@ html, body {
 
 .overlay {
     position: absolute;
-    top: 30%; /* Adjust this value to change the vertical position of the box */
+    top: 30%; 
     left: 60%;
     transform: translate(-50%, -50%);
-    background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
-    width: 60%; /* Adjust the width as needed */
+    background-color: rgba(217, 217, 217, 0.8); 
+    width: 60%; 
     max-height: 50%;
     max-width: 60%;
-    padding: 7%; /* Adjust the padding as needed */
-    border-radius: 15px; /* Adjust the radius value as needed */
+    padding: 7%; 
+    border-radius: 15px; 
 }
 .overlay2 {
     position: absolute;
-    top: 30%; /* Adjust this value to change the vertical position of the box */
+    top: 30%; 
     left: 60%;
     transform: translate(-50%, -50%);
-    background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
-    width: 70%; /* Adjust the width as needed */
-    max-height: 70%;
+    background-color: rgba(217, 217, 217, 0.8); 
+    width: 70%; 
     max-width: 70%;
     height: 20%;
     padding:2%;
-    border-radius: 15px; /* Adjust the radius value as needed */
+    border-radius: 15px; 
 }
 
 .overlay3 {
     position: absolute;
-    top: 30%; /* Adjust this value to change the vertical position of the box */
+    top: 30%; 
     left: 60%;
     transform: translate(-50%, -50%);
-    background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
-    width: 70%; /* Adjust the width as needed */
+    background-color: rgba(217, 217, 217, 0.8); 
+    width: 70%; 
     max-height: 70%;
     max-width: 70%;
     height: 20%;
     padding:2%;
-    border-radius: 15px; /* Adjust the radius value as needed */
+    border-radius: 15px; 
 }
 
 .greybox {
     position: absolute;
-    width: 13%; /* Adjust width as needed */
+    width: 13%; 
     height: auto;
-    right:35%; /* Adjust right position as needed */
-    bottom: 20%; /* Adjust bottom position as needed */
+    right:35%; 
+    bottom: 20%; 
 }
 
 .greybox2 {
     position: absolute;
-    width: 13%; /* Adjust width as needed */
+    width: 13%; 
     height: auto;
-    right: 55%; /* Adjust right position as needed */
-    bottom: 20%; /* Adjust bottom position as needed */
+    right: 55%; 
+    bottom: 20%; 
 }
 .greyboxtshirt{
     position: absolute;
@@ -145,10 +144,10 @@ html, body {
 }
 .greybox3 {
     position: absolute;
-    width: 12%; /* Adjust width as needed */
+    width: 12%; 
     height: auto;
-    right: 75%; /* Adjust right position as needed */
-    bottom: 20%; /* Adjust bottom position as needed */
+    right: 75%; 
+    bottom: 20%; 
 }
 .greyboxglass{
     position: absolute;
@@ -159,9 +158,9 @@ html, body {
 }
 .greybox4 {
     position: absolute;
-    width: 13%; /* Adjust width as needed */
+    width: 13%;
     height: auto;
-    right: 15%; /* Adjust right position as needed */
+    right: 15%; 
     bottom: 20%;
 
 }
@@ -171,39 +170,39 @@ html, body {
 }
 
 h1 {
-    font-size: 6vw; /* Adjust font size as needed */
+    font-size: 6vw; 
     margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
 .location {
-    font-size: 2vw; /* Adjust font size as needed */
+    font-size: 2vw; 
     font-family: 'Montserrat', sans-serif;
     color: black;
     margin-bottom: 5px;
 }
 
 .temperature {
-    font-size: 5vw; /* Adjust font size as needed */
+    font-size: 5vw; 
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
     
 .forecast-grid {
-    border: 1px solid black;
+    /* border: 1px solid rgb(255, 255, 255); */
     border-radius: 1em;
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping of forecast boxes */
-    overflow-x: auto; /* Enable horizontal scrolling */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
 }
 
 .forecast-box {
-    width: 120px; /* Adjust width as needed */
+    width: 120px; 
     padding: 10px;
     margin: 10px;
-    border-radius: 5px; /* Add border radius */
-    background-color: #f9f9f966; /* Add background color */
+    border-radius: 5px; 
+    background-color: #f9f9f966; 
     text-align: center;
     font-family: 'Monsterrat', sans-serif;
 }
@@ -224,16 +223,16 @@ h1 {
 .facts-box {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    top: 55%; /* Adjust vertical position as needed */
-    left: 1%; /* Adjust horizontal position as needed */
+    top: 55%; 
+    left: 1%; 
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.74); /* Adjust the alpha value for desired transparency */
+    background-color: rgba(255, 255, 255, 0.74); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     height: 60%;
-    max-width: 10%; /* Limit the maximum height of the box */
-    overflow-y: auto; /* Add scrollbar when content exceeds maximum height */
+    max-width: 10%; 
+    overflow-y: auto; 
 }
 
 .facts-box h2 {
@@ -304,37 +303,37 @@ h1 {
 
     .overlay2 {
         position: absolute;
-        top: 10%; /* Adjust this value to change the vertical position of the box */
+        top: 10%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
-        width: 90%; /* Adjust the width as needed */
-        max-height: 70%;
+        background-color: rgba(217, 217, 217, 0.8); 
+        width: 90%;
+        max-height: 10%;
         max-width: 90%;
         height: auto;
         padding: 2%;
-        border-radius: 15px; /* Adjust the radius value as needed */
+        border-radius: 15px; 
     }
     
     .forecast-grid {
         display: flex;
-        flex-wrap: nowrap; /* Prevent wrapping of forecast boxes */
-        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap; 
+        overflow-x:auto; 
     }
     
     .forecast-box {
-        width: 120px; /* Adjust width as needed */
+        width: 120px; 
         padding: 10px;
         margin: 10px;
-        border: 1px solid #ccc; /* Add border styling */
-        border-radius: 5px; /* Add border radius */
-        background-color: #f9f9f9; /* Add background color */
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        background-color: #f9f9f9; 
         text-align: center;
     }
     
     .date, .showTemp, .condition {
-        font-size: 50%; /* Adjust font size for all elements */
-        line-height: 1; /* Adjust line height */
+        font-size: 50%; 
+        line-height: 1; 
     }
     
 }
