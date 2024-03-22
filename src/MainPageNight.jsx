@@ -90,8 +90,7 @@ function MainPageNight() {
             </div>
 
             <div className="overlay2" style={{ top: '50%' }}>
-                <div className="text-container">
-                    <h1>Weather Forecast</h1>
+                <div className="text-container" id="forecast-container">
                     <p className="location"></p>
                     <div className="forecast-grid">
                         {forecasts.list.map((forecast, index) => (
