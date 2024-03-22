@@ -72,7 +72,7 @@ function MainPageNight() {
     return (
         <div className="background" style={{
             backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`,
-            transition: 'background-image 1s ease-in-out' // Add transition for background image
+            transition: 'background-image 1s ease-in-out' 
         }}>
             <a href="/">
                 <img src={fitforecastLogoImg} alt="Logo" className="fit-logo" />

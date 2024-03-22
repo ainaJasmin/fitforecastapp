@@ -15,6 +15,8 @@ function RainPage() {
 
     const [forecasts, setForecasts] = useState(null);
 
+
+    // API is used here to link front end and rain conditions
     useEffect(() => {
         const apiKey = '6ba3ee5ac50af61f21d2136ac5dab42c';
         const weatherApiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&appid=${apiKey}&units=metric`;
