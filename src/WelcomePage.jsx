@@ -69,7 +69,6 @@ function WelcomePage() {
                     localStorage.setItem("lat", data[0].lat);
                     localStorage.setItem("lon", data[0].lon);
                     localStorage.setItem("name", data[0].name);
-                    console.log(data);
                 } else {
                     localStorage.setItem("lat", 0);
                     localStorage.setItem("lon", 0);

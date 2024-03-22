@@ -27,16 +27,26 @@ import greatwallImg from "./wallofchina.jpeg";
 import tajmahalimg from "./tajmahal.jpg";
 const backgroundImages = [macauImg, petronas, notredamImg, bigbenImg, eiffelImg, lisbonImg,goldengateImg];
 
-function callWeatherApi() {
-    
-}
 
 function MainPageNight() {
+
+    const [forecasts, setForecasts] = useState(null);
+
     const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
+    useEffect(() => {
+        const apiKey = '6ba3ee5ac50af61f21d2136ac5dab42c';
+        const weatherApiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&appid=${apiKey}&units=metric`;
+    
+        fetch(weatherApiURL)
+            .then(response=>response.json())
+            .then(data => {
+                console.log(data)
+                setForecasts(data);
+            })
+            .catch(err => console.log(err));
+    }, []);
 
     useEffect(() => {
-
-        console.log(localStorage.getItem("name"));
 
         const interval = setInterval(() => {
             setCurrentBackgroundIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
@@ -55,6 +65,10 @@ function MainPageNight() {
         } // Cleanup interval on component unmount
     }, []); // Empty dependency array ensures useEffect runs only once
 
+    if (!forecasts) {
+        return <>Loading</>
+    }
+
     return (
         <div className="background" style={{
             backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`,
@@ -67,10 +81,10 @@ function MainPageNight() {
                 <img src={searchLogoImg} alt="Logo" className="searchLogo" />
                 <div className="text-container">
                     <div className="sunny text-box">
-                        <h1>Sunny</h1>
+                        <h1>{forecasts.list[0].weather[0].main}</h1>
                     </div>
                     <div className="location text-box">
-                        <p className="location">Mile End</p>
+                        <p className="location">{forecasts.city.name}</p>
                     </div>
                 </div>
             </div>
