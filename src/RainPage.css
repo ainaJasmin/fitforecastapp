@@ -112,3 +112,35 @@
     top: 85%;
     left: -15%;
 }
+
+.rain-overlay1, .rain-overlay2, .rain-overlay3, .rain-overlay4, .rain-overlay5, .rain-overlay6 {
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.overlays img {
+    height: 120%;
+    width: 120%;
+}
+
+
+.rain-overlay2 img {
+    height: 200%;
+    width: 200%;
+}
+
+.cont {
+    position: relative;
+    top: -130%;
+}
+.rain-overlay3 .cont, .rain-overlay2 .cont, .rain-overlay6 .cont {
+    left: -50%
+}
+
+.rain-overlay6 img{
+    height: 160%;
+    width: 160%;
+    position: relative;
+    left: 10%;
+}
