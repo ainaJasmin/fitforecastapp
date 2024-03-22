@@ -1,8 +1,8 @@
 .clothes-logo {
     position: absolute;
-    top: 2%; /* Adjust top position as needed */
-    left: 2%; /* Adjust left position as needed */
-    width: 10%; /* Adjust width as needed */
+    top: 2%; 
+    left: 2%; 
+    width: 10%; 
 }
 body {
     margin: 0;
@@ -10,13 +10,13 @@ body {
 }
 .clothes-overlay {
     position: absolute;
-    top: 30%; /* Adjust this value to change the vertical position of the box */
+    top: 30%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
-    width: 55%; /* Adjust the width as needed */
-    max-width: 55%; /* Set a maximum width if desired */
-    padding: 5%; /* Adjust the padding as needed */
+    background-color: rgba(217, 217, 217, 0.5); 
+    width: 55%; 
+    max-width: 55%; 
+    padding: 5%; 
     font-family: 'Montserrat', sans-serif;
     border-radius: 1vw;
     color: black;
@@ -25,26 +25,26 @@ body {
 .clothes-overlay2 {
     position: absolute;
     left: 17%;
-    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
-    width: 24.5%; /* Adjust the width as needed */
+    background-color: rgba(217, 217, 217, 0.5); 
+    width: 24.5%; 
     height: 20%;
     max-height: 20%;
-    max-width: 24.5%; /* Set a maximum width if desired */
+    max-width: 24.5%;
     border-radius: 15px;
-    padding: 3%; /* Adjust the padding as needed */
+    padding: 3%; 
     font-family: 'Montserrat', sans-serif;
 }
 .clothes-overlay4 {
     position: absolute;
     right: 17%;
-    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
-    width: 24.5%; /* Adjust the width as needed */
+    background-color: rgba(217, 217, 217, 0.5); 
+    width: 24.5%; 
     font-size: 100%;
     height: 20%;
     max-height: 20%;
-    max-width: 24.5%; /* Set a maximum width if desired */
+    max-width: 24.5%; 
     border-radius: 15px;
-    padding: 3%; /* Adjust the padding as needed */
+    padding: 3%; 
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -52,35 +52,35 @@ body {
 .clothes-overlay3 {
     position: absolute;
     left: 17%;
-    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
-    width: 24.5%; /* Adjust the width as needed */
+    background-color: rgba(217, 217, 217, 0.5); 
+    width: 24.5%; 
     height: 20%;
     max-height: 20%;
-    max-width: 24.5%; /* Set a maximum width if desired */
-    padding: 3%; /* Adjust the padding as needed */
-    border-radius: 15px; /* Adjust the radius value as needed */
+    max-width: 24.5%; 
+    padding: 3%;
+    border-radius: 15px; 
     font-family: 'Montserrat', sans-serif;
 }
 .clothes-overlay5 {
     position: absolute;
     right: 17%;
-    background-color: rgba(217, 217, 217, 0.5); /* Adjust the alpha value for desired transparency */
-    width: 24.5%; /* Adjust the width as needed */
+    background-color: rgba(217, 217, 217, 0.5); 
+    width: 24.5%; 
     height: 20%;
     max-height: 20%;
-    max-width: 24.5%; /* Set a maximum width if desired */
-    padding: 3%; /* Adjust the padding as needed */
-    border-radius: 15px; /* Adjust the radius value as needed */
+    max-width: 24.5%; 
+    padding: 3%; 
+    border-radius: 15px; 
     font-family: 'Montserrat', sans-serif;
 }
 ul, ol {
     list-style: none;
-    padding-left: 0; /* Optionally remove left padding */
+    padding-left: 0; 
 }
 .clothes-sunny {
     position: absolute;
     bottom: 23%;
-    left: 25%; /* Adjust left position as needed */
+    left: 25%; 
     transform: translateX(-50%);
     font-size:5.2vw;
     font-family: 'Montserrat', sans-serif;
@@ -89,7 +89,7 @@ ul, ol {
 .clothes-date{
     position: absolute;
     bottom: 10%;
-    left: 90%; /* Adjust left position as needed */
+    left: 90%; /* Adjusts left position as needed */
     transform: translateX(-50%);
     font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
@@ -99,7 +99,7 @@ ul, ol {
     position: absolute;
     bottom: 13%;
     white-space: nowrap;
-    left: 70%; /* Adjust left position as needed */
+    left: 70%; 
     transform: translateX(-50%);
     font-size: 1.7vw;
     font-family: 'Montserrat', sans-serif;
@@ -109,7 +109,7 @@ ul, ol {
         position: relative;
         width: 100%;
         height: 100vh;
-        overflow: hidden; /* Ensure image doesn't overflow the container */
+        overflow: hidden; /* Ensures image doesn't overflow the container */
 
 }
 

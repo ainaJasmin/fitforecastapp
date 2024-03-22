@@ -1,6 +1,6 @@
 import React from 'react';
 import './HydrationPage.css';
-import WaterImg from './water3.jpg'; // Correct the import name
+import WaterImg from './water3.jpg'; 
 import fitforecastLogoImg from './fitforecast logo.png';
 import { Link } from 'react-router-dom';
 
@@ -16,6 +16,8 @@ function HydrationPage() {
                 </div>
                 <div className="Slogan">
                 </div>
+
+                {/* additional info on hydration for fitness enthusiasts */}
                 <div className="hydration-facts">
                     <h2>Why Hydration is Important</h2>
                     <p>Water is essential for various bodily functions, including regulating body temperature,

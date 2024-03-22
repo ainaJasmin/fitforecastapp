@@ -13,26 +13,26 @@ body {
 .Welcome-BlueBar {
     position: absolute;
     left: 10%;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 1000%; /* Set a maximum width if desired */
+    width: 80%; 
+    max-width: 1000%; 
     height: auto;
     top: 35%;
     max-height: 30%;
-    border-radius: 15px; /* Adjust the radius value as needed */
+    border-radius: 15px; 
     font-family: 'Montserrat', sans-serif;
 }
 
 .Title{
     position: absolute;
     left: 13%;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 100%; /* Set a maximum width if desired */
+    width: 80%; 
+    max-width: 100%; 
     height: auto;
     top: 25%;
     font-size: 3.2vw;
     font-style: italic;
     max-height: 30%;
-    border-radius: 15px; /* Adjust the radius value as needed */
+    border-radius: 15px; 
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,9 +49,9 @@ body {
 
 .Welcome-FitLogo {
     position: absolute;
-    top: 26%; /* Adjust top position as needed */
-    left: 7.9%; /* Adjust left position as needed */
-    width: 19%; /* Adjust width as needed */
+    top: 26%; 
+    left: 7.9%; 
+    width: 19%; 
     height: auto;
 }
 
@@ -88,15 +88,15 @@ body {
     border: none;
     border-radius: 1vw;
     outline: none;
-    color: white; /* Adjust text color as needed */
-    font-size: 1.3vw; /* Adjust font size as needed */
+    color: white; 
+    font-size: 1.3vw; 
     width: 100%;
     height: auto;
 }
 
 .SearchLabel {
-    color: white; /* Adjust label color as needed */
-    font-size: 0.8vw; /* Adjust font size as needed */
+    color: white; 
+    font-size: 0.8vw; 
     margin-right: 100%;
 }
 
