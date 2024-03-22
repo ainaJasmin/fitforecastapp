@@ -1,3 +1,9 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .background {
     position: relative;
     width: 100%;
@@ -5,12 +11,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden; /* Ensure image doesn't overflow the container */
-
+    transition: background-image 1s ease-in-out;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .fit-logo {
     position: absolute;
@@ -268,5 +275,40 @@ h1 {
         font-size: 3vw;
     }
     /* Facts Box styles */
+
+    .overlay2 {
+        position: absolute;
+        top: 10%; /* Adjust this value to change the vertical position of the box */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
+        width: 90%; /* Adjust the width as needed */
+        max-height: 70%;
+        max-width: 90%;
+        height: auto;
+        padding: 2%;
+        border-radius: 15px; /* Adjust the radius value as needed */
+    }
+    
+    .forecast-grid {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping of forecast boxes */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    
+    .forecast-box {
+        width: 120px; /* Adjust width as needed */
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc; /* Add border styling */
+        border-radius: 5px; /* Add border radius */
+        background-color: #f9f9f9; /* Add background color */
+        text-align: center;
+    }
+    
+    .date, .showTemp, .condition {
+        font-size: 50%; /* Adjust font size for all elements */
+        line-height: 1; /* Adjust line height */
+    }
     
 }

@@ -75,7 +75,7 @@ function MainPageSunny() {
                 <img src={searchLogoImg} alt="Search Logo" className="searchLogo" />
                 <div className="text-container">
                     <div className="sunny text-box">
-                        <h1>Sunny</h1>
+                        <h1>{forecasts.list[0].weather[0].main}</h1>
                     </div>
                     <div className="location text-box">
                         <p className="location">{forecasts.city.name}</p>
@@ -84,10 +84,18 @@ function MainPageSunny() {
             </div>
 
             <div className="overlay2" style={{ top: '50%' }}>
-                <div className="text-container">
-                    <h1>Box 2</h1>
+            <div className="text-container">
+                    <h1>Weather Forecast</h1>
                     <p className="location"></p>
-                    <p className="temperature"></p>
+                    <div className="forecast-grid">
+                        {forecasts.list.map((forecast, index) => (
+                            <div className="forecast-box" key={index}>
+                                <p className="date">{new Date(forecast.dt * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+                                <p className="showTemp">{forecast.main.temp}°C</p>
+                                <p className="condition">{forecast.weather[0].main}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 

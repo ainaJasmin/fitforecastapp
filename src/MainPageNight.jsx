@@ -91,11 +91,21 @@ function MainPageNight() {
 
             <div className="overlay2" style={{ top: '50%' }}>
                 <div className="text-container">
-                    <h1>Box 2</h1>
+                    <h1>Weather Forecast</h1>
                     <p className="location"></p>
-                    <p className="temperature"></p>
+                    <div className="forecast-grid">
+                        {forecasts.list.map((forecast, index) => (
+                            <div className="forecast-box" key={index}>
+                                <p className="date">{new Date(forecast.dt * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+                                <p className="showTemp">{forecast.main.temp}°C</p>
+                                <p className="condition">{forecast.weather[0].main}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
+
+
 
             <div className="overlay3" style={{ top: '80%' }}>
                 <div className="text-container">
