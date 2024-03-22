@@ -84,7 +84,7 @@ function MainPageSunny() {
             </div>
 
             <div className="overlay2" style={{ top: '50%' }}>
-            <div className="text-container">
+            <div className="text-container" id="forecast-container">
                     <h1>Weather Forecast</h1>
                     <p className="location"></p>
                     <div className="forecast-grid">

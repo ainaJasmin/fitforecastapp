@@ -84,7 +84,7 @@ html, body {
 .overlay {
     position: absolute;
     top: 30%; /* Adjust this value to change the vertical position of the box */
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
     width: 60%; /* Adjust the width as needed */
@@ -96,7 +96,7 @@ html, body {
 .overlay2 {
     position: absolute;
     top: 30%; /* Adjust this value to change the vertical position of the box */
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
     width: 70%; /* Adjust the width as needed */
@@ -110,7 +110,7 @@ html, body {
 .overlay3 {
     position: absolute;
     top: 30%; /* Adjust this value to change the vertical position of the box */
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     background-color: rgba(217, 217, 217, 0.8); /* Adjust the alpha value for desired transparency */
     width: 70%; /* Adjust the width as needed */
@@ -189,6 +189,32 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+    
+.forecast-grid {
+    border: 1px solid black;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of forecast boxes */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.forecast-box {
+    width: 120px; /* Adjust width as needed */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px; /* Add border radius */
+    background-color: #f9f9f966; /* Add background color */
+    text-align: center;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+.forecast-box .date {
+    font-weight: bold;
+}
+
+.forecast-box .condition {
+    font-style: italic;
+}
 
 .body {
     font-family: 'Montserrat', sans-serif;
@@ -199,13 +225,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 55%; /* Adjust vertical position as needed */
-    left: 0.5%; /* Adjust horizontal position as needed */
+    left: 1%; /* Adjust horizontal position as needed */
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.74); /* Adjust the alpha value for desired transparency */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    max-height: 50%;
+    height: 60%;
     max-width: 10%; /* Limit the maximum height of the box */
     overflow-y: auto; /* Add scrollbar when content exceeds maximum height */
 }
