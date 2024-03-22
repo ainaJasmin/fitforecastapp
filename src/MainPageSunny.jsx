@@ -17,6 +17,33 @@ function MainPageSunny() {
     const [isDayTime, setIsDayTime] = useState(true);
     const navigate = useNavigate();
 
+    const [forecasts, setForecasts] = useState(null);
+
+    function callWeatherApi() {
+        console.log("Hello");
+        const apiKey = '6ba3ee5ac50af61f21d2136ac5dab42c';
+        const weatherApiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&appid=${apiKey}&units=metric`;
+    
+        fetch(weatherApiURL)
+            .then(response=>response.json())
+            .then(data => {
+                return data.list;
+            })
+            .catch(err => console.log(err));
+    }
+
+    useEffect(() => {
+        const apiKey = '6ba3ee5ac50af61f21d2136ac5dab42c';
+        const weatherApiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&appid=${apiKey}&units=metric`;
+    
+        fetch(weatherApiURL)
+            .then(response=>response.json())
+            .then(data => {
+                setForecasts(data);
+            })
+            .catch(err => console.log(err));
+    }, []);
+
     useEffect(() => {
         const determineTimeOfDay = () => {
             const currentHour = new Date().getHours();
@@ -34,6 +61,10 @@ function MainPageSunny() {
         return <MainPageNight />
     }
 
+    if (!forecasts) {
+        return <>Loading</>
+    }
+
     // Daytime content rendering
     return (
         <div className="background">
@@ -47,7 +78,7 @@ function MainPageSunny() {
                         <h1>Sunny</h1>
                     </div>
                     <div className="location text-box">
-                        <p className="location">Mile End</p>
+                        <p className="location">{forecasts.city.name}</p>
                     </div>
                 </div>
             </div>
