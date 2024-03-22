@@ -1,7 +1,7 @@
 # FitForecast
 GUI Project
 
-The zip file needs:
+The zip file needs these outside of src folder to run:
 1. package.json
 2. package-lock.json
 3. .gitignore
