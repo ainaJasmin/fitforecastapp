@@ -70,7 +70,9 @@ function MainPageSunny() {
         <div className="background">
             {/* Render daytime content */}
             <img src={towerbridge} alt="Background" className="background-image" />
-            <img src={fitforecastLogoImg} alt="Logo" className="logo" />
+            <a href="/">
+                <img src={fitforecastLogoImg} alt="Logo" className="fit-logo" />
+            </a>
             <div className="overlay" style={{ top: '20%' }}>
                 <img src={searchLogoImg} alt="Search Logo" className="searchLogo" />
                 <div className="text-container">
@@ -84,8 +86,7 @@ function MainPageSunny() {
             </div>
 
             <div className="overlay2" style={{ top: '50%' }}>
-            <div className="text-container" id="forecast-container">
-                    <h1>Weather Forecast</h1>
+                <div className="text-container" id="forecast-container">
                     <p className="location"></p>
                     <div className="forecast-grid">
                         {forecasts.list.map((forecast, index) => (
@@ -101,19 +102,20 @@ function MainPageSunny() {
 
             <div className="overlay3" style={{ top: '80%' }}>
                 <div className="text-container">
-                    <a href="">
+                <a href="rain">
                         <img src={greyBoxesImg} alt="Grey Box" className="greybox"/>
                         <img src={rainImg} alt="Rain" className="greybox"/>
                     </a>
-                    <a href="">
+                    <a href="clothes">
                         <img src={greyBoxesImg} alt="Grey Box" className="greybox2"/>
                         <img src={tshirtlogoImg} alt="T-shirt Logo" className="greybox2"/>
                     </a>
-
+                    <a href="blog">
                     <img src={pfplogoImg} alt="PFP Logo" className="greybox3"/>
                     <img src={greyBoxesImg} alt="Grey Box" className="greybox3"/>
+                    </a>
 
-                    <a href="">
+                    <a href="hydration">
                         <img src={greyBoxesImg} alt="Grey Box" className="greybox4"/>
                         <img src={glasswaterImg} alt="Glass Water" className="greybox4"/>
                     </a>

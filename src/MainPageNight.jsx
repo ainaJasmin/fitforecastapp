@@ -116,9 +116,9 @@ function MainPageNight() {
                         <img src={greyBoxesImg} alt="Grey Box" className="greybox2"/>
                         <img src={tshirtlogoImg} alt="T-shirt Logo" className="greybox2"/>
                     </a>
-                    <a href="hydration">
-                    <img src={pfplogoImg} alt="PFP Logo" className="greybox3"/>
-                    <img src={greyBoxesImg} alt="Grey Box" className="greybox3"/>
+                    <a href="blog">
+                        <img src={pfplogoImg} alt="PFP Logo" className="greybox3"/>
+                        <img src={greyBoxesImg} alt="Grey Box" className="greybox3"/>
                     </a>
 
                     <a href="hydration">
